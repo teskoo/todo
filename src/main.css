@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    background-color: #1A1A1A;
+}
+.todolist__container{
+    margin: -27px auto 0 auto;
+    max-width: 736px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.todo__form{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+.todo__input{
+    height: 54px;
+    min-width: 100px;
+    width: 100%;
+    padding: 16px;
+    color: #F2F2F2;
+    font-size: 16px;
+    background-color: #262626;
+    border: 1px solid #0D0D0D;
+    outline: none;
+    border-radius: 8px;
+}
+.todo__input::placeholder{
+    color: #808080;
+}
+.todo__button{
+    min-width: fit-content;
+    padding: 0 24px;
+    background-color: #1E6F9F;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.todo__button:hover{
+    cursor: pointer;
+}
+.todo__button:active {
+    transform: scale(0.95);
+    background-color: #155a7a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
